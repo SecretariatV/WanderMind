@@ -1,6 +1,4 @@
 import Header from "@/components/Header";
-// import { Github } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -14,19 +12,16 @@ const About = () => {
           </h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
             <strong>TravelGenie</strong> is your intelligent AI-powered travel
-            companion that builds itineraries for your adventures.
-            Whether you're a solo traveler or planning a group trip, TravelGenie
+            companion that builds itineraries for your adventures. Whether
+            you're a solo traveler or planning a group trip, TravelGenie
             simplifies your journey planning with smart suggestions on routes,
             flights, weather prep, food places, and events.
           </p>
 
           <div className="mt-6 border-t border-gray-200 pt-6">
-            <h2 className="text-2xl font-semibold text-travel-accent mb-2">
-              Hackathon Showcase
-            </h2>
             <p className="text-muted-foreground text-md leading-relaxed">
               This project was proudly built for the{" "}
-              <strong>Global AI-Agent League Hackathon 2025</strong> hosted by Agentverse by{" "}
+              <strong>Global AI-Agent</strong> hosted by Agentverse and{" "}
               <em>Fetch.ai</em>, where developers crafted collaborative
               autonomous agents to solve real-world problems using LLMs and tool
               integration.
@@ -54,20 +49,6 @@ const About = () => {
               personal travel assistant on autopilot.
             </p>
           </div>
-
-          {/* GitHub Button */}
-          <div className="mt-8 flex justify-center">
-            <a
-              href="https://github.com/rohit180497/Agentverse-Hackathon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-travel-primary text-white px-5 py-2 rounded-lg hover:bg-travel-accent transition-all shadow"
-            >
-              <FaGithub size={20} className="text-black" />
-              <span className="ml-2 text-black">View on GitHub</span>
-            </a>
-          </div>
-
           {/* Architecture GIF */}
           <div className="mt-10">
             <h3 className="text-xl font-semibold mb-2 text-travel-primary">

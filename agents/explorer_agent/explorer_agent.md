@@ -1,8 +1,5 @@
 # 🌍 Google Places Explorer Agent
 
-![tag : innovation-lab](https://img.shields.io/badge/innovation--lab-3D8BD3) ![tag : agentverse](https://img.shields.io/badge/agentverse-purple)
-![tag : travel](https://img.shields.io/badge/travel-orange) ![tag : tourism](https://img.shields.io/badge/tourism-blue) ![tag : google-places](https://img.shields.io/badge/google--places-lightgrey) ![tag : explorer](https://img.shields.io/badge/explorer-green) ![tag : location-aware](https://img.shields.io/badge/location--aware-yellow) ![tag : itinerary](https://img.shields.io/badge/itinerary-teal) ![tag : hackathon](https://img.shields.io/badge/hackathon-red)
-
 **Domain:** Travel / Exploration / Smart Tourism  
 **Agent Type:** AI Agent for Popular Attractions Discovery  
 **Status:** Public and Live on Agentverse
@@ -183,17 +180,6 @@ if __name__ == "__main__":
 - Localhost + `.env` setup  
 
 ---
-
-## Source Code
-
-[GitHub Project](https://github.com/rohit180497/Agentverse-Hackathon/tree/main/agents/)
-
----
-
-## Credits
-
-Developed for the **Fetch.ai Global AI Agents League Hackathon**  
-Built by: [Rohit Kosamkar](https://github.com/rohit180497)  
 
 Have suggestions or want to extend this agent?  
 Feel free to contribute, fork, or submit a PR!

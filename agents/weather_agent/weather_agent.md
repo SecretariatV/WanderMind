@@ -152,13 +152,3 @@ if __name__ == "__main__":
 - Weather data is matched to the nearest available forecast timestamp.
 - Ideal for integration with trip planners, route agents, or travel assistants.
 
----
-
-## Source Code
-[GitHub Project](https://github.com/rohit180497/Agentverse-Hackathon/tree/main/agents/weather_agent)
-
-## Credits
-Developed for the **Fetch.ai Global AI Agents League Hackathon**  
-Built by: [Rohit Kosamkar](https://github.com/rohit180497)
-
-Feel free to contribute or open issues for feedback and improvements.

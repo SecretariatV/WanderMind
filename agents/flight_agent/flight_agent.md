@@ -185,19 +185,3 @@ if __name__ == "__main__":
     test_agent.run()
 ```
 
----
-
-## 📂 Source Code
-[GitHub Project](https://github.com/rohit180497/Agentverse-Hackathon/tree/main/agents/flight_agent)
-
----
-
-## 👨‍💻 Credits
-
-Built for the **Fetch.ai Global AI Agents League Hackathon**  
-By: [Rohit Kosamkar](https://github.com/rohit180497)
-
----
-
-*Feel free to contribute or raise issues for improvements.*
-

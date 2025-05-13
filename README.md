@@ -1,134 +1,130 @@
-![AI](https://img.shields.io/badge/AI-Powered-brightgreen?style=for-the-badge&logo=OpenAI&logoColor=white) ![LLM](https://img.shields.io/badge/LLM-Gemini-blue?style=for-the-badge&logo=google&logoColor=white)
- ![LangChain](https://img.shields.io/badge/LangChain-Integrated-orange?style=for-the-badge&logo=python&logoColor=white) ![TravelTech](https://img.shields.io/badge/TravelGenie-Agent-blueviolet?style=for-the-badge&logo=earth&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black) ![Multi-Agent](https://img.shields.io/badge/Multi--Agent-System-critical?style=for-the-badge&logo=apacheairflow&logoColor=white) ![Deployed](https://img.shields.io/badge/Deployed-Render%20%26%20Vercel-success?style=for-the-badge&logo=vercel&logoColor=white)
-
-
-# TravelGenie (AI-Powered Travel Itinerary Planner)
-
-TravelGenie is a full-stack AI-powered travel assistant that helps users effortlessly plan end-to-end trips through a conversational interface. Built with FastAPI (backend) and TypeScript + Tailwind (frontend), it uses multi-agent orchestration to deliver intelligent travel suggestions.
-
----
-
-## Project Architecture
-
-![architecture](architecture/TravelGenie_Architecture.gif)
-
-
-## Project Features
-- **Chatbot Interface** to collect trip details from the user.
-- **Multi-Agent System**: Weather, Route, Flights, Events, Food, Places.
-- **Dynamic Itinerary Generator** powered by LLM (Gemini).
-- **Real-time APIs**: Google Maps, Amadeus, Ticketmaster, OpenWeather, and more.
-- **FastAPI Backend** + Vercel-Deployed React Frontend.
-- **Auto-Deploy via GitHub ➔ Render (backend)**.
+![AI](https://img.shields.io/badge/AI-Powered-brightgreen?style=for-the-badge\&logo=OpenAI\&logoColor=white)
+![Multi-Agent](https://img.shields.io/badge/Multi--Agent%20Planning-Orchestration-blueviolet?style=for-the-badge\&logo=apacheairflow\&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-Gemini%202.0%20Flash-blue?style=for-the-badge\&logo=google\&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-ReAct%20Planning-orange?style=for-the-badge\&logo=python\&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
+![Deployed](https://img.shields.io/badge/Deployed-Render%20%26%20Vercel-success?style=for-the-badge\&logo=vercel\&logoColor=white)
 
 ---
 
-## Agentverse Registered Agents
-- [Google API Route Agent](https://agentverse.ai/agents/details/agent1qfetzztsmf373m7qa4x6l5mjveykecm87cu9m7myaxd7ukp0rwrjkkax9wt/editor)
-- [Weather Agent](https://agentverse.ai/agents/details/agent1q2zc0ctnxwyzd7xxgafwzwcd7tkzg7w790zjret9vwm2f38gmm5dv7wm22j/profile)
-- [Google Places Explorer Agent](https://agentverse.ai/agents/details/agent1q0vj2jq0xe05zdukwnesaqvey0sve99gahvfp452yrlemtng8axzvcf8hq0/profile)
-- [Flight Search Agent](https://agentverse.ai/agents/details/agent1qd3qj9wsjwdasgqu2w3gzwjgzc3cjx7pwdl26th3r67y46umgulwxu4emrg/profile)
-- [Restaurant Explorer Agent](https://agentverse.ai/agents/details/agent1qtcaxwkqgs0kgfmtsr90j9lcpjk3a7t3mtkf9sty8a07gdr0el6sjgkzy60/profile)
-- [Event Explorer Agent](https://agentverse.ai/agents/details/agent1qvmkshe4kn3ucfsecd9d703jqzqy858z5l2unn9qye3y6dyvc5ph20zmqch/profile)
+# 🌍 WanderMind – AI-Powered Multi-Agent Travel Planner
 
-## Folder Structure (Simplified)
-```
-rohit180497-agentverse-hackathon/
-├── app/                    # Main application
-│   ├── fastapi_app.py      # Entry point for backend
-│   ├── agents/             # Individual agent logic (weather, flights, etc.)
-│   ├── core/               # Planning, reasoning, itinerary generation
-│   ├── supervisor/         # Memory, extraction, intent
-│   ├── llm/                # Gemini integration
-│   ├── prompts/            # LLM prompt templates
-│   └── frontend/           # TypeScript + Tailwind React UI
-│       └── src/components/ # Chatbot UI, Dashboard Cards
-├── render.yaml             # Render deployment file
-├── requirements.txt        # Python dependencies
-└── README.md
-```
+**WanderMind** is an intelligent travel assistant that uses multiple AI agents to design smart, real-time itineraries through a conversational interface. It interprets user input, consults specialized agents, and presents a dynamic dashboard of trip suggestions.
 
 ---
 
-## Getting Started (Local Dev)
+## 🧠 Inspiration
 
-### 1. Backend Setup
-```bash
-cd app
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn fastapi_app:app --reload
-```
-
-### 2. Frontend Setup
-```bash
-cd app/frontend
-npm install
-npm run dev
-```
-Visit `http://localhost:5173`
+Most travel planning tools deliver static, overwhelming responses that lack personalization or live context. WanderMind was created to make trip planning feel like chatting with a personal assistant—interactive, informed, and intuitive.
 
 ---
 
-## Environment Variables
-Create a `.env` file in `app/` for backend keys:
+## ✨ What It Does
+
+* Accepts natural language input (e.g., “Plan a trip from LA to Seattle this weekend”)
+* Parses user intent and extracts relevant trip data
+* Coordinates specialized agents to retrieve:
+
+  * 🗺️ **Routes & Transport**
+  * 🌦️ **Weather Forecasts**
+  * ✈️ **Flight Options**
+  * 📍 **Attractions**
+  * 🍽️ **Restaurants**
+  * 🎟️ **Local Events**
+* Outputs a beautifully styled dashboard with visual cards and summaries
+* Uses Gemini 2.0 Flash + LangChain for orchestration and planning
+
+---
+
+## 🏗️ Architecture Overview
+
 ```
-GOOGLE_MAPS_API_KEY=...
-OPEN_WEATHER_API_KEY=...
-GEMINI_API_KEY=...
-TICKETMASTER_API_KEY=...
-AMADEUS_API_KEY=...
-AMADEUS_SECRET_KEY=...
+User Input → Supervisor Agent (Intent + Context)
+           ↓
+   Core Planner (LLM + LangChain)
+           ↓
+   Multiple AI Agents → External APIs
+           ↓
+     Dashboard → Visual UI Output
 ```
 
 ---
 
-## 🌐 Deployment
+## ⚙️ How It’s Built
 
-### Backend (Render)
-- Configure Render service with `render.yaml`
-- Enable **Auto-Deploy from GitHub**
+* **Frontend:** React + Tailwind CSS
+* **Backend:** FastAPI
+* **Orchestration:** LangChain + Gemini 2.0 Flash
+* **Agents (Modular AI Units):**
 
-### Frontend (Vercel)
-- Connect `app/frontend` folder as root
-- Output directory: `dist`
-- Auto-deploy on GitHub push
+  * Weather
+  * Flights
+  * Events
+  * Attractions
+  * Restaurants
+  * Routing
+* **APIs Integrated:**
+
+  * Google Maps, Google Places
+  * Amadeus (flights)
+  * Ticketmaster (events)
+  * OpenWeatherMap
+
+---
+
+## 🧩 Key Challenges
+
+* Syncing multi-agent message flow
+* Real-time data validation (e.g., invalid city pairs or date formats)
+* Handling LLM reasoning across diverse data types
+* Seamless frontend transition from chat → visual itinerary
+
+---
+
+## ✅ Accomplishments
+
+* Built and deployed 6+ independent AI agents
+* Designed a UI that feels like a chat-to-dashboard transformation
+* Modular code that allows future expansion (e.g., budgeting, hotels, co-planning)
+
+---
+
+## 📚 What We Learned
+
+* How to structure systems with autonomous AI agents
+* Deepened skills in LLM orchestration using LangChain ReAct
+* Best practices for secure and reliable multi-API integration
+* Importance of UX in complex AI systems
+
+---
+
+## 🚀 What’s Next
+
+* ✨ Voice-based input
+* 🏨 Hotel booking agent
+* 💸 Budget estimation and tracker
+* 👥 Shared planning with friends
+* 📱 Mobile app version
+* 🗂️ Itinerary history and login-based access
 
 ---
 
 ## 📈 Tech Stack
-- **FastAPI**, **LangChain**, **Gemini** (LLM)
-- **TailwindCSS**, **React**, **Vite**
-- **Docker-ready**, **Auto-deploy CI/CD**
+
+* **Frontend:** React, TailwindCSS, TypeScript
+* **Backend:** FastAPI (Python)
+* **AI/LLM:** Gemini 2.0 Flash, LangChain (ReAct)
+* **Agents:** Modular agent architecture
+* **APIs:** Google Maps, OpenWeather, Amadeus, Ticketmaster
+* **Deployment:** Vercel (frontend), Render (backend)
 
 ---
 
-## ✨ Sample Itinerary Flow
-1. User chats: "I want to go from Boston to NYC from May 3 to May 6."
-2. Supervisor extracts fields & validates.
-3. Agents fetch:
-   - Best route
-   - Flights
-   - Restaurants
-   - Events
-   - Places to visit
-   - Weather forecast
-4. LLM summarizes everything.
-5. Dashboard renders a beautiful card-based layout.
+## 📬 Contact
 
----
-
-## ✍️ Contributors
-- [Rohit Kosamkar](https://github.com/rohit180497)
-- [Sapna Chavan](https://github.com/SapnaSChavan)
-
----
-
-## ✉️ Feedback & Contributions
-Issues and PRs welcome! For enhancements or bugs, please [open an issue](https://github.com/rohit180497-agentverse-hackathon/issues).
-
----
-
-> 💫 TravelGenie: Because your next trip should be smart, not stressful. 🌍
+* GitHub: [@SecretariatV](https://github.com/SecretariatV)
+* Email: [oliver.b25.f@gmail.com](mailto:oliver.b25.f@gmail.com)
+* Telegram: [@ares\_orb](https://t.me/ares_orb)
+* Twitter (X): [@OVB\_Coder](https://x.com/OVB_Coder)
 

@@ -135,15 +135,6 @@ agent.run()
 
 ---
 
-## Source Code
-[GitHub Project](https://github.com/rohit180497/Agentverse-Hackathon/tree/main/agents/route_agent)
-
-## Credits
-Developed for the **Fetch.ai Global AI Agents League Hackathon**  
-Built by: [Rohit Kosamkar](https://github.com/rohit180497)
-
----
-
 ## Contribute
 Have suggestions, feature ideas, or improvements? Feel free to fork the project, submit pull requests, or open issues.  
 We welcome all contributions and feedback to make this agent even better.
