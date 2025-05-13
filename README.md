@@ -110,6 +110,28 @@ User Input → Supervisor Agent (Intent + Context)
 
 ---
 
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="screenshots/message.png" alt="User enters trip details via chat" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/answer.png" alt="Agents collecting real-time data" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/events.png" alt="Generated itinerary dashboard with cards" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/routes.png" alt="Generated dashboard with cards" width="800"/>
+</p>
+
+---
+
 ## 📈 Tech Stack
 
 * **Frontend:** React, TailwindCSS, TypeScript
